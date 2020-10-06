@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ *Counts to inputted number on a single line with commas inbetween
+ * @author Jackson
  */
 public class Main {
 
@@ -9,7 +10,18 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    //scanner for input
+    Scanner input = new Scanner(System.in);
+
+    //get the interger
+    System.out.println("Please enter a positive integer");
+    int num = input.nextInt();
+
+    //create for loop
+    for(int count = 1; count < num; count++){
+
+      System.out.print(count + ", ");
+    }
+    System.out.print(num);
   }
 }
